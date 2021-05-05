@@ -1,97 +1,819 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="main.css">
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Welcome</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <button id="sideButton" class="sideButton" onclick="accessSideBar()" value="notActive"> <svg
-            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path d="M3 4h18v2H3V4zm6 7h12v2H9v-2zm-6 7h18v2H3v-2z" />
-        </svg></button>
-    <div id="navigation">
-        <div id="sideBar" class="sideBar">
+    <!-- ======= Top Bar ======= -->
+    <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+        <div class="container d-flex align-items-center">
+            <div class="contact-info mr-auto">
+                <ul>
+                    <li>
+                        <i class="icofont-envelope"></i><a
+                            href="mailto:contact@example.com">aman.singh2020@gmail.com</a>
+                    </li>
+                    <li><i class="icofont-phone"></i> +91 7726020852</li>
+                    <li>
+                        <i class="icofont-clock-time icofont-flip-horizontal"></i>24X7 available
+                    </li>
+                </ul>
+            </div>
+            <div class="cta">
+                <a href="#about" class="scrollto">Get Started</a>
+            </div>
+        </div>
+    </div>
 
-            <div id="overlay-content" class="sideBarContent">
-                <a onclick="show(this)">Intro</a>
-                <a onclick="show(this)">E-Recycling Info</a>
-                <a onclick="show(this)">Services</a>
-                <a onclick="show(this)">Partners</a>
-                <a onclick="show(this)">Find A Recycler</a>
-                <a onclick="show(this)">Contact Us</a>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+            <h1 class="logo mr-auto">
+                <a href="#header" class="scrollto">WELCOME</a>
+            </h1>
 
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- .nav-menu -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex justify-cntent-center align-items-center">
+        <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="carousel-container">
+                    <h2 class="animate__animated animate__fadeInDown">
+                        Welcome to <span>UNDER THE RUG CLEANERS</span>
+                    </h2>
+                    <p class="animate__animated animate__fadeInUp">
+                        UTRC is a corporation with the main motive of connecting all the e-recycling services and
+                        companies across all India together. Just like any other modern
+                        country, India is also trying to combat the combact E-waste. To tackle this problem, India has
+                        managed to
+                        create many infrastructures, but there is a lack of service
+                        to tie all these infrastructures. Which prevents the general public from disposing e-waste
+                        easily.
+                    </p>
+                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                </div>
             </div>
 
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="carousel-container">
+                    <h2 class="animate__animated animate__fadeInDown">
+                        E-WASTE MANAGEMENT
+                    </h2>
+                    <p class="animate__animated animate__fadeInUp">
+                        E-waste is different from municipal and industrial wastes and hence requires special handling
+                        procedures due to the presence of both valuable and expensive materials. Recycling of e-waste
+                        can help in the recovery of reusable components and base materials, especially copper and
+                        precious metals.
+                    </p>
+                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-    </div>
-    <div id="Images">
+    </section>
+    <!-- End Hero -->
 
-        <img id="part1" src="logo1.jpg">
-        <img id="part2" src="ewaste.jpg">
+    <main id="main">
+        <!-- ======= Icon Boxes Section ======= -->
+        <section id="icon-boxes" class="icon-boxes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-file"></i></div>
+                            <h4 class="title">
+                                <a href="">Purpose Of This Website</a>
+                            </h4>
+                            <p class="description">
+                                We made this website to provide people ease of access to all e-recyling companies
+                                available in India. People can locate e-waste drop off points as well as collect info
+                                all the e-recycling services available to them.
+                            </p>
+                        </div>
+                    </div>
 
-    </div>
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-file"></i></div>
+                            <h4 class="title">
+                                <a href="">Our Team</a>
+                            </h4>
+                            <p class="description">
+                                Our team works round the clock to ensure all our partners uphold the best standard for
+                                e-recyling.
+                            </p>
+                        </div>
+                    </div>
 
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-file"></i></div>
+                            <h4 class="title">
+                                <a href="">Our Services</a>
+                            </h4>
+                            <p class="description">
+                                <ol>
+                                    <li>Providing E-waste drop off points around the country</li>
+                                    <li>A comprehensive database of all e-recycling services in the country </li>
+                                    <li>Collection of e-waste and its delivery to appropriate E-recyling plants.</li>
+                                </ol>
+                            </p>
+                        </div>
+                    </div>
 
-    <div id="mainContent">
-        <div class="fullWidth" id="intro">
-            <section class="mainPage leftSection">
-                <p id="heading" style="color:blueviolet;font-size: 30px;">UNDER THE RUG CLEANERS</p>
-                <hr color="blueviolet" size="3px" width="100vw" align="left">
-                <p>UTRC is a corporation with the main motive of disposing and recycling of e-waste. In present-day
-                    India, there is a huge problem regarding wastage. To tackle this problem, India has managed to
-                    create an many infrastructures, but there is a lack of service to tie all these infrastructures.
-                    Which prevents the general public from disposing e-waste easily.</p>
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-file"></i></div>
+                            <h4 class="title">
+                                <a href="">Why Recycle E-waste</a>
+                            </h4>
+                            <p class="description">
+                                <ol>
+                                    <li>Make Earth Green And Clean Again</li>
+                                    <li>Safeguard against toxic waste from technology </li>
+                                    <li>Save resources by recycling parts </li>
+                                </ol>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Icon Boxes Section -->
 
-                <p>Our corporation aims to fix that problem. We plan to partner with E-Recyclers from Government and
-                    Corporate sector all over India to help citizens provide ease of access to all their services. </p>
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>About Us</h2>
+                    <p>
+                        UTRC is a corporation with the main motive of disposing and recycling of e-waste. In present-day
+                        India, there is a huge problem regarding wastage. To tackle this problem, India has managed to
+                        create an many infrastructures, but there is a lack of service
+                        to tie all these infrastructures. Which prevents the general public from disposing e-waste
+                        easily.
+                    </p>
+                </div>
+
+                <div class="row content">
+                    <div class="col-lg-6">
+                        <p>
+                            Our corporation aims to fix that problem. We plan to partner with E-Recyclers from
+                            Government and Corporate sector all over India to help citizens provide ease of access to
+                            all their services.
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="ri-check-double-line"></i>A COMPREHENSIVE DATABASE OF ALL E-RECYCLERS ACROSS
+                                INDIA.
+                            </li>
+                            <li>
+                                <i class="ri-check-double-line"></i>DROP OFF POINTS ACROSS ALL INDIA
+                            </li>
+                            <li>
+                                <i class="ri-check-double-line"></i>INFO ABOUT CORRECT WAYS TO DISPOSE OFF YOUR WASTE
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <p>
+                            We aim to give our best to prevent E-waste from polluting and harming our and our
+                            environment's life.
+                        </p>
+                        <a href="#" class="btn-learn-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Us Section -->
+
+        <!-- ======= Clients Section ======= -->
+        <section id="clients" class="clients">
+            <div class="container" data-aos="zoom-in">
+                <div class="owl-carousel clients-carousel">
+                    <img src="assets/img/clients/client-1.jpg" alt="" />
+                    <img src="assets/img/clients/client-2.png" alt="" />
+                    <img src="assets/img/clients/client-3.jpg" alt="" />
+                    <img src="assets/img/clients/client-4.png" alt="" />
+
+                </div>
+            </div>
+        </section>
+        <!-- End Clients Section -->
+
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us">
+            <div class="container-fluid">
+                <div class="row">
+                    <iframe width="690" height="388" src="https://www.youtube.com/embed/CmP67zq5hfo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                    <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch"
+                        data-aos="fade-left">
+                        <div class="content">
+                            <h3>
+                                What's the need?
+                                <strong>Why do we need a service like this one ?</strong>
+                            </h3>
+                            <p>
+                                Well ! The answer is simple , ease of access has always encouraged people to
+                                participate.
+                            </p>
+                        </div>
+
+                        <div class="accordion-list">
+                            <ul>
+                                <li data-aos="fade-up" data-aos-delay="100">
+                                    <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span>
+                                        Ease of Acces encourages participation.
+                                        <i class="bx bx-chevron-down icon-show"></i><i
+                                            class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+                                        <p>
+                                            When getting your e-waste to recycling plants will get easier , people will
+                                            participate more in doing so.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li data-aos="fade-up" data-aos-delay="200">
+                                    <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span>
+                                        More participation means more efficiency.
+                                        <i class="bx bx-chevron-down icon-show"></i><i
+                                            class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                                        <p>
+                                            When people start recycling e-waste on an individual level, the rate and
+                                            quantity at which e-waste will get recycled will certainly increase even
+                                            more so than if companies tried to do it.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li data-aos="fade-up" data-aos-delay="300">
+                                    <a data-toggle="collapse" href="#accordion-list-3" class="collapsed">
+                                        <span>03</span>Providing easy access to info will do wonders.
+                                        <i class="bx bx-chevron-down icon-show"></i><i
+                                            class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                                        <p>
+                                            From the perspective of a common man , if they can just go on a website to
+                                            gather info about where they need to deposit their e-waste , they will do it
+                                            more often.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Why Us Section -->
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Services</h2>
+                    <p>
+                        Our Team , Under The Rug Cleaners , aims to provide you with the best of services. </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon-box">
+                            <i class="icofont-computer"></i>
+                            <h4>
+                                <a href="#">Networking</a>
+                            </h4>
+                            <p>
+                                We created this company to connect as many as e-recyclers as we can to the common man.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="icon-box">
+                            <i class="icofont-chart-bar-graph"></i>
+                            <h4>
+                                <a href="#">Our Main Services</a>
+                            </h4>
+                            <p>
+                                <ol>
+                                    <li>A COMPREHENSIVE DATABASE OF ALL E-RECYCLERS ACROSS INDIA.
+                                    </li>
+                                    <li>DROP OFF POINTS ACROSS ALL INDIA
+                                    </li>
+                                    <li>INFO ABOUT CORRECT WAYS TO DISPOSE OFF YOUR WASTE
+                                    </li>
+                                </ol>
+                            </p>
+                        </div>
+                    </div>
+                    <!---  <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <div class="icon-box">
+                            <i class="icofont-image"></i>
+                            <h4>
+                                <a href="#">MY memory</a>
+                            </h4>
+                            <p>
+                                Doing campaings and others things like rally to motivate others.
+                            </p>
+                        </div>
+                    </div>-->
+                    <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+                        data-aos-delay="400">
+                        <div class="icon-box">
+                            <i class="icofont-settings"></i>
+                            <h4>
+                                <a href="#">Updated</a>
+                            </h4>
+                            <p>
+                                We aim to keep our users updated about all services and info related to e-recycling.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="icon-box">
+                            <i class="icofont-earth"></i>
+                            <h4>
+                                <a href="#">Increase Rseach</a>
+                            </h4>
+                            <p>
+                                We aim to include as much e-recycling services and plants as we can while also
+                                maintaining the integrity of the standard. We also plan to establish more e-waste drop
+                                off points across the country.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Services Section -->
+
+        <!-- ======= Cta Section ======= -->
+     <!---  <section id="cta" class="cta">
+            <div class="container">
+                <div class="row" data-aos="zoom-in">
+                   <!--- <div class="col-lg-9 text-center text-lg-left">
+                        <h3>Call To Action</h3>
+                        <p>
+                        
+                        </p>
+                    </div>
+                    <div class="col-lg-3 cta-btn-container text-center">
+                        <a class="cta-btn align-middle" href="#">Call To Action</a>
+                    </div>
+                </div>
+            </div>
+        </section>--> 
+        <!-- End Cta Section -->
+
+        <section id="map" class="services">
             </section>
-        </div>
 
-        <div class="fullWidth" id="e-recycling-info">
-            <section class="rightSection">
-                <p id="hed2" style="color:green;font-size: 30px;">WHAT IS E-WASTE?</p>
-                <hr color="green" size="3px" width="100vw" align="left">
-                <p>
-                    E-waste is any electrical or electronic equipment that’s been discarded. This includes working and
-                    broken items that are thrown in the garbage or donated to a charity reseller like Goodwill. Often,
-                    if the item goes unsold in the store, it will be thrown away. E-waste is particularly dangerous due
-                    to toxic chemicals that naturally leach from the metals inside when buried.</p>
-                <p>For more info about E-waste , you can refer to <br><a href="https://greene.gov.in/">E-Waste Awareness
-                        website of Government of India.</a></p>
-            </section>
-        </div>
-        <div class="fullWidth" id="services">
-            <section class="Services leftSection">
-                <p id="hed3" style="color:mediumvioletred;font-size: 30px;">SERVICES</p>
-                <hr color="mediumvioletred" size="3px" width="100vw" align="left">
-                <P>
+        <!-- ======= Team Section ======= -->
+        <section id="team" class="team section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Team</h2>
+                    <p>
+                        we the team member's of under the rug cleaner team pledge to keep our environment neat clean and
+                        alwas stand against the E-waste.
+                    </p>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member d-flex align-items-start">
+                        <div class="pic">
+                            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="" />
+                        </div>
+                        <div class="member-info">
+                            <h4>Ranjan Kumar</h4>
+                            <span>Team Leader</span>
+                            <p>
+                               Website Development
+                            </p>
+                            <div class="social">
+                                <a href=""><i class="ri-twitter-fill"></i></a>
+                                <a href=""><i class="ri-facebook-fill"></i></a>
+                                <a href=""><i class="ri-instagram-fill"></i></a>
+                                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic">
+                                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" />
+                            </div>
+                            <div class="member-info">
+                                <h4>Aman Singh</h4>
+                                <span>Team Member</span>
+                                <p>
+                                    Website Developer
+                                </p>
+                                <div class="social">
+                                    <a href=""><i class="ri-twitter-fill"></i></a>
+                                    <a href=""><i class="ri-facebook-fill"></i></a>
+                                    <a href=""><i class="ri-instagram-fill"></i></a>
+                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic">
+                                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="" />
+                            </div>
+                            <div class="member-info">
+                                <h4>Sekhar Bhardwaj</h4>
+                                <span>Team Member</span>
+                                <p>
+Website Development                                </p>
+                                <div class="social">
+                                    <a href=""><i class="ri-twitter-fill"></i></a>
+                                    <a href=""><i class="ri-facebook-fill"></i></a>
+                                    <a href=""><i class="ri-instagram-fill"></i></a>
+                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- End Team Section -->
+
+
+        <!-- ======= Frequently Asked Questions Section ======= -->
+        <section id="faq" class="faq section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+
+                <div class="faq-list">
                     <ul>
-                        <li>A COMPREHENSIVE DATABASE OF ALL E-RECYCLERS ACROSS INDIA.</li>
-                        <li>DROP OFF POINTS ACROSS ALL INDIA.</li>
-                        <li>INFO ABOUT CORRECT WAYS TO DISPOSE OFF YOUR WASTE</li>
-                    </ul>
-                </p>
-            </section>
-        </div>
-        <div class="fullWidth" id="partners">
-            <section class="rightSection"> <p id="hed4" style="color:yellowgreen;font-size: 30px;">PARTNERS</p>
-                <hr color="yellowgreen" size="3px" width="100vw" align="left"></section>
-        </div>
-        <div class="fullWidth" id="find-a-recycler">
-            <section id="map" class="Map leftSection"></section>
-        </div>
-        <div class="fullWidth" id="contact-us">
-            <section class="rightSection">
-                <p id="hed3" style="color:blue;font-size: 30px;">CONTACT US</p>
-                <hr color="blue" size="3px" width="100vw" align="left">
+                        <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
+                            <i class="bx bx-help-circle icon-help"></i>
+                            <a data-toggle="collapse" class="collapse" href="#faq-list-1"> What is e-waste?
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                                <p>E-waste refers to electronic products nearing the end of their "useful life", for
+                                    example, computers, televisions, VCRs, stereos, copiers, and fax machines. Many of
+                                    these products can be reused, refurbished, or recycled.
+                                </p>
+                            </div>
+                        </li>
 
-            </section>
+                        <li data-aos="fade-up" data-aos-delay="200">
+                            <i class="bx bx-help-circle icon-help"></i>
+                            <a data-toggle="collapse" href="#faq-list-2" class="collapsed"> What do we do with e-waste?
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                                <p>
+                                    Reduce, reuse, and recycle. Reduce your generation of e-waste through smart
+                                    procurement and good maintenance. Reuse still-functioning electronic equipment by
+                                    donating or selling it to someone. Recycle those components that cannot be repaired.
+                                    Most electronic
+                                    devices contain a variety of materials, including metals, that can be recycled.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="300">
+                            <i class="bx bx-help-circle icon-help"></i>
+                            <a data-toggle="collapse" href="#faq-list-3" class="collapsed"> What is the Electronic Waste
+                                Recycling Act?
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                                <p>
+                                    In 2003, the Electronic Waste Recycling Act established a funding system for the
+                                    collection and recycling of certain electronic wastes. Key elements of the
+                                    Electronic Waste Recycling Act of 2003 include the collection of an electronic waste
+                                    recycling
+                                    fee at the retail point of sale of covered products and requirements on
+                                    manufacturers to provide consumer information regarding recycling opportunities. The
+                                    intent of this program is to make recycling options for consumers
+                                    more convenient so products containing toxic compounds are disposed of
+                                    appropriately. For more information on this law and its implementation, please see
+                                    <a
+                                        href="http://http://www.calrecycle.ca.gov/Electronics/">http://http://www.calrecycle.ca.gov/Electronics/</a>.
+                                    Beginning in 2005, an Electronic Waste Recycling Fee will be assessed on certain
+                                    covered electronic devices
+                                    sold in California. Covered devices include most video display products, such as
+                                    computer monitors and televisions. The fee will be collected at the time of retail
+                                    sale, including Internet and catalog sales, to California
+                                    consumers and is not reimbursable to consumers. </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up " data-aos-delay="400 ">
+                            <i class="bx bx-help-circle icon-help "></i>
+                            <a data-toggle="collapse " href="#faq-list-4 " class="collapsed ">What is banned from the
+                                landfill?
+                                <i class="bx bx-chevron-down icon-show "></i><i
+                                    class="bx bx-chevron-up icon-close "></i></a>
+                            <div id="faq-list-4 " class="collapse " data-parent=".faq-list ">
+                                <p>
+                                    Almost any product with a circuit board is now banned from the landfill and
+                                    considered universal waste and, as such, requires special handling. Like used motor
+                                    oil and paint, universal waste is a kind of hazardous waste. It is illegal to
+                                    dispose of hazardous
+                                    waste in the garbage. These products contain toxic substances, such as mercury,
+                                    lead, and cadmium. Mercury, released into the environment through the improper
+                                    disposal of mercury-containing products, is a known neurotoxin.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up " data-aos-delay="500 ">
+                            <i class="bx bx-help-circle icon-help "></i>
+                            <a data-toggle="collapse " href="#faq-list-5 " class="collapsed ">How do I recycle and
+                                dispose of electronic scrap?
+                                <i class="bx bx-chevron-down icon-show "></i><i
+                                    class="bx bx-chevron-up icon-close "></i></a>
+                            <div id="faq-list-5 " class="collapse " data-parent=".faq-list ">
+                                <p>
+                                    Since electronic waste is subject to California’s hazardous waste regulations, it
+                                    must be reused, recycled, or disposed of properly. Please do not put these items in
+                                    the garbage or curbside recycling bins. A complete list of universal waste products
+                                    and
+                                    information about disposal and recycling options, is available on the DTSC website
+                                    at
+                                    <a
+                                        href="http://www.dtsc.ca.gov/HazardousWaste/UniversalWaste/index.cfm.">http://www.dtsc.ca.gov/HazardousWaste/UniversalWaste/index.cfm.</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- End Frequently Asked Questions Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id=" contact " class="contact ">
+            <div class="container " data-aos="fade-up ">
+                <div class="section-title ">
+                    <h2>Contact Us</h2>
+                </div>
+
+                <div class="row mt-1 d-flex justify-content-end " data-aos="fade-right " data-aos-delay="100 ">
+                    <div class="col-lg-5 ">
+                        <div class="info ">
+                            <div class="address ">
+                                <i class="icofont-google-map "></i>
+                                <h4>Location:</h4>
+
+                                <p>VIT BHOPAL</p>
+                            </div>
+
+                            <div class="email ">
+                                <i class="icofont-envelope "></i>
+                                <h4>Email:</h4>
+                                <p>aman.singh2020@vithbopal.ac.in</p>
+                                <p>ranjan.kumar2020@vithbopal.ac.in</p>
+                                <p>aman.singh2020@vithbopal.ac.in</p>
+
+                            </div>
+
+                            <div class="phone ">
+                                <i class="icofont-phone "></i>
+                                <h4>Call:</h4>
+                                <p> +91 772602082</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-5 mt-lg-0 " data-aos="fade-left " data-aos-delay="100 ">
+                        <form action="forms/contact.php " method="post " role="form " class="php-email-form ">
+                            <div class="form-row ">
+                                <div class="col-md-6 form-group ">
+                                    <input type="text " name="name " class="form-control " id="name "
+                                        placeholder="Your Name " data-rule="minlen:4 "
+                                        data-msg="Please enter at least 4 chars " />
+                                    <div class="validate "></div>
+                                </div>
+                                <div class="col-md-6 form-group ">
+                                    <input type="email " class="form-control " name="email " id="email "
+                                        placeholder="Your Email " data-rule="email "
+                                        data-msg="Please enter a valid email " />
+                                    <div class="validate "></div>
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <input type="text " class="form-control " name="subject " id="subject "
+                                    placeholder="Subject " data-rule="minlen:4 "
+                                    data-msg="Please enter at least 8 chars of subject " />
+                                <div class="validate "></div>
+                            </div>
+                            <div class="form-group ">
+                                <textarea class="form-control " name="message " rows="5 " data-rule="required "
+                                    data-msg="Please write something for us " placeholder="Message "></textarea>
+                                <div class="validate "></div>
+                            </div>
+                            <div class="mb-3 ">
+                                <div class="loading ">Loading</div>
+                                <div class="error-message "></div>
+                                <div class="sent-message ">
+                                    Your message has been sent. Thank you!
+                                </div>
+                            </div>
+                            <div class="text-center ">
+                                <button type="submit ">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+    </main>
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer ">
+        <div class="footer-newsletter ">
+            <div class="container ">
+                <div class="row ">
+
+                </div>
+            </div>
         </div>
-    </div>
+
+        <div class="footer-top ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-3 col-md-6 footer-links ">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li>
+                                <i class="bx bx-chevron-right "></i> <a href="# ">Home</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right "></i> <a href="# ">About us</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right "></i> <a href="# ">Services</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links ">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li>
+                                <i class="bx bx-chevron-right "></i>
+                                <a href="# ">Motivate others</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right "></i>
+                                <a href="# ">Surveying</a>
+                            </li>
+                            <li>
+                                <i class="bx bx-chevron-right "></i>
+                                <a href="# ">Providing solution</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact ">
+                        <h4>Contact Us</h4>
+                        <p>
+                            VIT BHOPAL<br /> MADHYA PRADESH, MP <br /> INDIA <br /><br />
+                            <strong>Phone:</strong> +91 7726020852 <br />
+                            <strong>Email:</strong>
+                            <P>aman.singh2020@vithbopal.ac.in</p>
+                            <p>ranjan.kumar2020@vithbopal.ac.in</p>
+                            <p>shekhar.singh2020@vithbopal.ac.in</p><br />
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-info ">
+                        <h3>About us</h3>
+                        <p>
+                            we the team( UNDER THE RUG CLEANERS ) who have decided to motivate others towards e-waste
+                            management.
+                        </p>
+                        <div class="social-links mt-3 ">
+                            <a href="# " class="twitter "><i class="bx bxl-twitter "></i></a>
+                            <a href="# " class="facebook "><i class="bx bxl-facebook "></i></a>
+                            <a href="# " class="instagram "><i class="bx bxl-instagram "></i></a>
+                            <a href="# " class="google-plus "><i class="bx bxl-skype "></i></a>
+                            <a href="# " class="linkedin "><i class="bx bxl-linkedin "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container ">
+            <div class="copyright ">
+                &copy; Copyright <strong><span>Under the rug cleaners </span></strong>. All Rights Reserved
+            </div>
+            <div class="credits ">
+
+                Designed by SAR</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="# " class="back-to-top "><i class="ri-arrow-up-line "></i></a>
+    <div id="preloader "></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js "></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js "></script>
+    <script src="assets/vendor/php-email-form/validate.js "></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js "></script>
+    <script src="assets/vendor/venobox/venobox.min.js "></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
+    <script src="assets/vendor/aos/aos.js "></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js "></script>
+
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiZGF6ZWRtZWNoYW5pYzIxMCIsImEiOiJja28yYXVycmMweHB6Mm9tdm9rNGUzMmx5In0.WnslH7SxaKuhF6dTn172lA';
         var map = new mapboxgl.Map({
@@ -134,8 +856,14 @@
         );
     </script>
 
-
-    </div>
 </body>
+
+</html>ript src="assets/js/main.js "></script>
+</body>
+
+</html>ript src="assets/js/main.js "></script>
+</body>
+
+</html>y>
 
 </html>
